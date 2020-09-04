@@ -660,29 +660,29 @@
           <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">          
             <div class="col-md-6 col-lg-6 col-sm-12">
               <div class="contact-block">
-                <h2>Contact Form</h2>
+                <h2>Contact me</h2>
                 <div id="profile">
-                <form id="contactForm">
+                <form id="contactForm" action="mailto:troyxiii@gmail.com" method="GET">
                   <div class="row">
                     
                     <div class="col-md-6">
                       <div class="form-group">
-                        <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Please enter your email" v-model="massage.email">
+                        <input type="email" placeholder="Email" name="cc" type="email">
                       </div> 
                     </div>
                      <div class="col-md-12">
                       <div class="form-group">
-                        <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required data-error="Please enter your subject" v-model="massage.subject">
+                        <input type="text"  name="subject" placeholder="subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
                         <div class="help-block with-errors"></div>
                       </div>
                     </div>
                     <div class="col-md-12">
                       <div class="form-group"> 
-                        <textarea class="form-control" id="message" placeholder="Your Message" rows="5" data-error="Write your message" v-model="massage.massage" required ></textarea>
+                        <textarea class="form-control"name="body" placeholder="Your Message" rows="5" data-error="Write your message" required ></textarea>
                         <div class="help-block with-errors"></div>
                       </div>
                       <div class="submit-button">
-                        <button class="btn btn-common" id="submit" type="submit" @click="sendE()">Send Message</button>
+                        <button class="btn btn-common" id="submit" type="submit" value="Submit" >Send Message</button>
                         <div id="msgSubmit" class="h3 text-center hidden"></div> 
                         <div class="clearfix"></div> 
                       </div>
